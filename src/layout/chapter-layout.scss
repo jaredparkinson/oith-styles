@@ -1,7 +1,12 @@
 @import './images.scss';
-.chapter {
-  width: 70%;
-}
-img {
-  width: 70%;
+
+.chapter-loader {
+  display: grid;
+  grid-template-columns: 48px auto 48px;
+  .chapter {
+    width: 100%;
+  }
+  img {
+    width: 70%;
+  }
 }
