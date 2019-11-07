@@ -12,7 +12,9 @@
   "author": "",
   "license": "MIT",
   "dependencies": {
-    "node-sass": "^4.13.0"
+    "animate.css": "^3.7.2",
+    "node-sass": "^4.13.0",
+    "normalizecss": "^3.0.0"
   },
   "devDependencies": {
     "prettier": "^1.18.2"
