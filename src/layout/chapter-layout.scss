@@ -3,10 +3,167 @@
 .chapter-loader {
   display: grid;
   grid-template-columns: 48px auto 48px;
+  font-size: 1em;
+  font-family: Palatino-Roman, PahoranldsLat-Roman, Palatino, NotoSansMyanmar,
+    SaysetthaldsLao, serif;
+  font-weight: 400;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.33em;
+  text-align: left;
+
+  a {
+    color: inherit;
+    &.valid-href {
+      text-decoration: none;
+      color: #177c9c;
+      margin: 0;
+      padding: 0;
+      border: 0;
+      font-size: 100%;
+      font: inherit;
+      vertical-align: baseline;
+    }
+  }
+
   .chapter {
     width: 100%;
   }
   img {
     width: 70%;
+  }
+  #short_reference1,
+  #reference1 {
+    display: none;
+  }
+
+  &.classic-scriptures {
+    .closing-block p {
+      text-indent: 0;
+    }
+    .small-caps {
+      font-variant: small-caps;
+    }
+    .uppercase {
+      text-transform: uppercase;
+    }
+    .clarity-word {
+      font-family: Palatino-Italic, 'Palatino Italic', PahoranldsLat-Italic,
+        Palatino, NotoSansMyanmar, SaysetthaldsLao, serif;
+      font-weight: 400;
+      font-style: italic;
+      font-stretch: normal;
+    }
+    .signature {
+      font-variant: small-caps;
+      padding-bottom: 0;
+      text-indent: 0;
+    }
+    .verse-number {
+      font-size: 0.9em;
+      font-weight: 700;
+      font-style: normal;
+      font-stretch: normal;
+    }
+    .body-block {
+      header {
+        padding-bottom: 0;
+        margin: 0;
+        padding: 0;
+        border: 0;
+        font-size: 100%;
+        font: inherit;
+        vertical-align: baseline;
+      }
+      [id*='wide_ellipse'] {
+        font-size: 1.25em;
+        text-align: center;
+        letter-spacing: 0.35em;
+        padding-bottom: 0.5em;
+      }
+      p {
+        text-indent: 1.5em;
+      }
+      .verse {
+        text-indent: 0;
+        padding-bottom: 0.65em;
+      }
+    }
+
+    [id*='study_intro'] {
+      font-family: Palatino-Italic, 'Palatino Italic', PahoranldsLat-Italic,
+        Palatino, NotoSansMyanmar, SaysetthaldsLao, serif !important;
+      font-weight: 400;
+      font-style: italic;
+      font-stretch: normal;
+      padding-top: 0.9em;
+      padding-bottom: 1.25em;
+    }
+    [id*='study_summary'] {
+      font-family: Palatino-Italic, 'Palatino Italic', PahoranldsLat-Italic,
+        Palatino, NotoSansMyanmar, SaysetthaldsLao, serif;
+      font-weight: 400;
+      font-style: italic;
+      font-stretch: normal;
+      padding-bottom: 0;
+      text-indent: 0;
+      margin-top: -0.5em;
+    }
+
+    h1 {
+      font-weight: 400;
+      font-style: normal;
+      font-stretch: normal;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      font-size: 1em;
+      text-align: center;
+      line-height: 1.25em;
+      display: block;
+      padding-right: 1.5em;
+      padding-left: 1.5em;
+      & > .dominant {
+        padding-bottom: 0.35em;
+        font-size: 1.75em;
+        line-height: 1em;
+        display: block;
+        padding-top: 0.15em;
+      }
+      & > .subordinate {
+        font-size: 0.88em;
+        display: block;
+        padding-top: 0.15em;
+      }
+    }
+    [id*='subtitle'] {
+      font-size: 0.88em;
+      letter-spacing: 0.1em;
+      text-align: center;
+      text-transform: uppercase;
+      line-height: 1.33em;
+      padding-bottom: 0;
+    }
+    [id*='title_number'] {
+      padding-top: 1.4em;
+      font-size: 1.1em;
+      padding-bottom: 0.5em;
+      text-align: center;
+      display: block;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+    }
+    a {
+    }
+
+    .symbol {
+      padding-left: 1.5em;
+      display: block;
+      list-style: none;
+      & > li:before {
+        content: attr(data-marker);
+        margin-left: -1.5em;
+        float: left;
+      }
+    }
   }
 }
