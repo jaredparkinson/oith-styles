@@ -88,6 +88,16 @@
       .verse {
         text-indent: 0;
         padding-bottom: 0.65em;
+        margin-top: 0;
+        margin-bottom: 0;
+        &.highlight {
+          padding-left: 5px;
+          border-left: 2.5px solid #f68d2e;
+        }
+        &.context {
+          padding-left: 5px;
+          border-left: 2.5px solid #2ca1a5;
+        }
       }
     }
     .intro {
