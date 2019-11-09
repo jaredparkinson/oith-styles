@@ -2,7 +2,21 @@ format-group {
   font-family: serif;
   line-height: 1.5;
 }
-[id*='come-follow-me'] {
+.manual {
+  .uppercase {
+    letter-spacing: 0.025em;
+    text-transform: uppercase;
+  }
+  .body {
+    text-align: left;
+    font-weight: 400;
+    padding-left: 0;
+    color: #212225;
+    font-size: 18px;
+    // padding: 70px 13.5%;
+    padding-top: 48px;
+    padding-right: 0;
+  }
   header,
   [name='header'],
   [name='HEADER'] {
@@ -35,8 +49,15 @@ format-group {
     }
   }
   text-align: left;
-  header {
-    text-align: inherit !important;
+  .body-block {
+    header,
+    [name='header'],
+    [name='HEADER'] {
+      text-align: inherit !important;
+      & > div:first-child ~ * {
+        text-align: center;
+      }
+    }
   }
   [id*='title_number'] {
     text-align: inherit !important;
@@ -56,6 +77,15 @@ format-group {
       margin-top: 0.125em;
     }
   }
+  h2 {
+    font-size: 1.778em;
+    font-family: 'Ensign:Sans', ZoramldsLat-Light, 'Zoram ldsLat', Zoram, Arial,
+      sans-serif-light, sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.2;
+  }
   h3 {
     font-weight: 700;
     font-style: normal;
@@ -67,10 +97,12 @@ format-group {
   h4 {
     font-size: 1em;
     line-height: 1.2;
-    font-weight: 600 !important;
+    display: block;
+    font-family: 'Ensign:Sans', ZoramldsLat-Semibold, 'Zoram ldsLat', Zoram,
+      Arial, sans-serif-medium, sans-serif;
+    font-weight: 600;
     font-style: normal;
     font-stretch: normal;
-    display: block;
   }
   [id*='summary'],
   [id*='intro'],
