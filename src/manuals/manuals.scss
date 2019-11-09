@@ -3,6 +3,80 @@ format-group {
   line-height: 1.5;
 }
 .manual {
+  figure,
+  [name='FIGURE'],
+  [name='figure'] {
+    display: block;
+    &.for-teacher {
+      &::before {
+        content: '';
+        display: block;
+        width: 56px;
+        height: 4px;
+        background-color: #ffb81c;
+        margin-bottom: 8px;
+      }
+      color: #53575b;
+      padding: 1.778em;
+      border: solid 1px #e0e2e2;
+      border-radius: 2px;
+      margin-top: 1.778em;
+      margin-bottom: 1.778em;
+      header,
+      [name='header'],
+      [name='HEADER'] {
+        .title {
+          color: #53575b;
+          font-family: 'Ensign:Sans', ZoramldsLat-Bold, 'Zoram ldsLat', Zoram,
+            Arial, sans-serif;
+          font-weight: 700;
+          font-style: normal;
+          font-stretch: normal;
+          font-size: 1.111em;
+          line-height: 1.2;
+        }
+      }
+      p,
+      [name='P'],
+      [name='p'] {
+        &:not(.title):not(.subtitle) {
+          strong,
+          [name='STRONG'],
+          [name='strong'] {
+            font-family: 'Ensign:Sans', ZoramldsLat-Bold, 'Zoram ldsLat', Zoram,
+              Arial, sans-serif;
+            font-weight: 700;
+            font-style: normal;
+            font-stretch: normal;
+          }
+          cite,
+          [name='cite'],
+          [name='CITE'] {
+            font-family: 'Ensign:Sans', ZoramldsLat-Italic, 'Zoram ldsLat',
+              Zoram, Arial, sans-serif;
+            font-weight: 400;
+            font-style: italic;
+            font-stretch: normal;
+          }
+        }
+      }
+    }
+    &.handout {
+      &:before {
+        content: '';
+        display: block;
+        width: 56px;
+        height: 4px;
+        background-color: #00bad3;
+        margin-bottom: 8px;
+      }
+      padding: 1.778em;
+      box-shadow: 0 1px 10px 0 rgba(74, 74, 74, 0.2);
+      border-radius: 2px;
+      margin-top: 1.778em;
+      margin-bottom: 1.778em;
+    }
+  }
   .uppercase {
     letter-spacing: 0.025em;
     text-transform: uppercase;
