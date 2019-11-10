@@ -2,7 +2,8 @@
 
 router-outlet ~ div {
   overflow-y: scroll;
-  height: calc(100vh - 48px);
+  // height: calc(100vh - 48px);
+  height: 100vh;
 }
 
 body {
