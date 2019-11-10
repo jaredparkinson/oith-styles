@@ -1,9 +1,6 @@
 @import './images.scss';
 
 router-outlet ~ div {
-  overflow-y: scroll;
-  // height: calc(100vh - 48px);
-  height: 100vh;
 }
 
 body {
@@ -19,6 +16,9 @@ body {
 }
 
 .chapter-loader {
+  overflow-y: scroll;
+  // height: calc(100vh - 48px);
+  height: 100vh;
   chapter-content,
   .chapter-content {
     display: grid;
