@@ -7,9 +7,13 @@ router-outlet ~ div {
 
 body {
   overflow: hidden;
+
   .body {
     display: grid;
     justify-content: center;
+    & > div {
+      max-width: 1000px;
+    }
   }
 }
 
