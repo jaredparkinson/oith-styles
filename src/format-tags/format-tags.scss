@@ -17,6 +17,16 @@ f-text {
           text-decoration-color: #f68d2e !important;
         }
       }
+      &.all {
+        // text-decoration-color: none;
+        text-decoration: none;
+        &.highlight {
+          text-decoration-color: #f68d2e;
+          text-decoration: underline;
+          border-bottom: 1px solid #f68d2e;
+          text-decoration-color: #f68d2e;
+        }
+      }
     }
     &.ref-single {
       border-bottom: 1px solid grey;
@@ -24,6 +34,15 @@ f-text {
         border-bottom: 1px solid #f68d2e;
         &.pronunciation {
           border-bottom: 1px solid #f68d2e !important;
+        }
+      }
+      &.all {
+        border-bottom: unset;
+        &.highlight {
+          border-bottom: 1px solid #f68d2e;
+          &.pronunciation {
+            border-bottom: 1px solid #f68d2e !important;
+          }
         }
       }
     }
